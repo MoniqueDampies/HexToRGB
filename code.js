@@ -7,30 +7,30 @@ function slice(hexcode, start, end) {
 btnDisplay.addEventListener("click", () => {
   let hexcode = document.querySelector("#hex").value;
 
-  let redcode = slice(hexcode, 0, 2);
-  let greencode = slice(hexcode, 2, 4);
-  let bluecode = slice(hexcode, 4, 6);
+  let redcode = slice(hexcode, 0, 4);
+  let greencode = slice(hexcode, 4, 8);
+  let bluecode = slice(hexcode, 8, 12);
 
-  document.querySelector("#rgbR").innerHTML = parseInt(redcode, 16);
-  document.querySelector("#rgbG").innerHTML = parseInt(greencode, 16);
-  document.querySelector("#rgbB").innerHTML = parseInt(bluecode, 16);
+  document.querySelector("#rgbR").innerHTML = parseInt(redcode, 32);
+  document.querySelector("#rgbG").innerHTML = parseInt(greencode, 32);
+  document.querySelector("#rgbB").innerHTML = parseInt(bluecode, 32);
   document.querySelector("#RGBCode").innerHTML =
     "rgb(" +
-    parseInt(redcode, 16) +
+    parseInt(redcode, 32) +
     ", " +
-    parseInt(greencode, 16) +
+    parseInt(greencode, 32) +
     ", " +
-    parseInt(bluecode, 16) +
+    parseInt(bluecode, 32) +
     ")";
 
   let clrpane = document.querySelector("#color");
   let value =
     "rgb(" +
-    parseInt(redcode, 16) +
+    parseInt(redcode, 32) +
     ", " +
-    parseInt(greencode, 16) +
+    parseInt(greencode, 32) +
     ", " +
-    parseInt(bluecode, 16) +
+    parseInt(bluecode, 32) +
     ")";
   clrpane.style = `background-color: ${value}`;
 });
