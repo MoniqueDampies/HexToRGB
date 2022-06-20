@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>hexToRGB Generator</title>
+  </head>
+  <body>
+    <h2>Hex To RGB</h2>
+    <div class="container">
+      <div>
+        <label>Hex Color Code</label><br />
+        <input type="text" placeholder="Enter hex code" id="hex" />
+      </div>
+      <div>
+        <button id="generate">GENERATE</button>
+      </div>
+      <div>
+        <label>Red (R)</label><br />
+        <div class="colorC" id="rgbR"></div>
+      </div>
+      <div>
+        <label>Green (G)</label><br />
+        <div class="colorC" id="rgbG"></div>
+      </div>
+      <div>
+        <label>Blue (B)</label><br />
+        <div class="colorC" id="rgbB"></div>
+      </div>
+      <div>
+        <label>RGB code</label><br />
+        <div class="colorC" id="RGBCode"></div>
+      </div>
+      <div>
+        <label>Preview</label>
+        <div id="color"></div>
+      </div>
+    </div>
+
+    <script src="./code.js"></script>
+  </body>
+</html>
